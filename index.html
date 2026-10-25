@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rohan &amp; Sakshi | Wedding Invitation</title>
+<meta name="description" content="You are warmly invited to the wedding of Rohan & Sakshi on Wednesday, 2 December 2026 at 12:30 PM in Parali, Beed, Maharashtra.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Rohan & Sakshi | Wedding Invitation">
+<meta property="og:description" content="Wednesday, 2 December 2026 · 12:30 PM · Parali, Beed, Maharashtra">
+<meta property="og:image" content="cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='85'%3E%F0%9F%AA%B7%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Great+Vibes&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="locked">
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="mandala" viewBox="0 0 100 100"><g fill="none" stroke="#c9a24b" stroke-width=".8"><circle cx="50" cy="50" r="46"/><circle cx="50" cy="50" r="30"/><circle cx="50" cy="50" r="6"/><g id="p"><path d="M50 4C58 22 58 34 50 44C42 34 42 22 50 4Z"/></g><use href="#p" transform="rotate(45 50 50)"/><use href="#p" transform="rotate(90 50 50)"/><use href="#p" transform="rotate(135 50 50)"/><use href="#p" transform="rotate(180 50 50)"/><use href="#p" transform="rotate(225 50 50)"/><use href="#p" transform="rotate(270 50 50)"/><use href="#p" transform="rotate(315 50 50)"/></g></symbol>
+<symbol id="div" viewBox="0 0 260 24"><g fill="none" stroke="#c9a24b" stroke-width="1.2"><path d="M4 12H100M160 12H256"/><path d="M130 2C138 8 138 16 130 22C122 16 122 8 130 2Z" fill="#c9a24b"/><path d="M112 12C118 6 122 6 124 12C122 18 118 18 112 12ZM148 12C142 6 138 6 136 12C138 18 142 18 148 12Z"/></g></symbol>
+</defs></svg>
+
+<div id="gate" role="dialog" aria-label="Wedding invitation">
+  <div class="door l"><svg><use href="#mandala"/></svg></div>
+  <div class="door r"><svg><use href="#mandala"/></svg></div>
+  <div class="inner">
+    <p class="sm">With the blessings of our families</p>
+    <h1 class="script names glow">Rohan &amp; Sakshi</h1>
+    <p class="sm">Are getting married</p>
+    <p class="date"><strong>Wednesday, 02 December 2026</strong></p>
+    <p class="sm" style="margin-bottom:1.6rem">Your presence will make our special day even more memorable.</p>
+    <button class="btn" id="openBtn" type="button">Open Invitation</button>
+  </div>
+</div>
+
+<div id="petals" aria-hidden="true"></div>
+<button class="btn dark hide" id="music" type="button" aria-label="Play background music" aria-pressed="false">♪</button>
+
+<main>
+<section class="dark-s hero" id="top">
+  <div class="arch"></div><div class="arch b"></div>
+  <div class="wrap">
+    <svg class="divider" viewBox="0 0 260 24" aria-hidden="true"><use href="#div"/></svg>
+    <p class="sm">With the blessings of our families</p>
+    <h2 class="script names" style="color:var(--gold2)">Rohan &amp; Sakshi</h2>
+    <p class="date">Wednesday, 2 December 2026 &middot; 12:30 PM</p>
+    <p class="sm">Parali, Beed, Maharashtra</p>
+    <div id="cdArea">
+      <p class="sm" id="cdLead" style="margin-top:2rem">The countdown to forever begins…</p>
+      <div class="cd" id="cd" role="timer" aria-label="Countdown to the wedding">
+        <div class="cell"><span class="num" id="d">00</span><span class="lab">Days</span></div>
+        <div class="cell"><span class="num" id="h">00</span><span class="lab">Hours</span></div>
+        <div class="cell"><span class="num" id="m">00</span><span class="lab">Minutes</span></div>
+        <div class="cell"><span class="num" id="s">00</span><span class="lab">Seconds</span></div>
+      </div>
+      <p class="cdmsg hide" id="cdMsg"></p>
+    </div>
+  </div>
+</section>
+
+<section class="light-s" id="message">
+  <div class="wrap rev">
+    <div class="frame">
+      <svg class="divider" viewBox="0 0 260 24" aria-hidden="true"><use href="#div"/></svg>
+      <p>Two hearts, two families, and one beautiful journey.</p>
+      <p>With immense joy and the blessings of our families, we invite you to join us as Rohan and Sakshi begin their new chapter together.</p>
+      <p>Your presence, love, and blessings will make this celebration truly unforgettable.</p>
+    </div>
+  </div>
+</section>
+
+<section class="dark-s" id="details">
+  <div class="wrap rev">
+    <h2>The Wedding Celebration</h2>
+    <div class="card">
+      <h3>Wedding Ceremony</h3>
+      <p class="script" style="font-size:2.2rem;color:var(--gold)">Rohan &amp; Sakshi</p>
+      <ul class="rows">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><div><b>Date</b><span id="cDate"></span></div></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><b>Time</b><span id="cTime"></span></div></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.2 7-11a7 7 0 0 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><div><b id="cVenue"></b><span id="cLoc"></span></div></li>
+      </ul>
+      <div class="acts">
+        <a class="btn dark" id="calBtn" target="_blank" rel="noopener">Add to Calendar</a>
+        <a class="btn ghost" id="dirBtn" target="_blank" rel="noopener" style="color:var(--maroon)">Get Directions</a>
+      </div>
+    </div>
+    <div id="reception"></div>
+  </div>
+</section>
+
+<section class="light-s" id="venue">
+  <div class="wrap rev">
+    <h2>Where Our Forever Begins</h2>
+    <svg class="divider" viewBox="0 0 260 24" aria-hidden="true"><use href="#div"/></svg>
+    <p><strong id="vName"></strong></p>
+    <p id="vAddr"></p>
+    <div class="mapbox"><iframe id="map" title="Map of Parali, Beed, Maharashtra" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    <p class="note" id="mapNote"></p>
+    <div class="acts">
+      <a class="btn dark" id="dir2" target="_blank" rel="noopener">Get Directions</a>
+      <button class="btn ghost" id="copyAddr" type="button" style="color:var(--maroon)">Copy Address</button>
+    </div>
+    <p class="note" role="status" id="copyMsg"></p>
+  </div>
+</section>
+
+<section class="light-s hide" id="story"><div class="wrap"><h2>Our Story</h2><div class="tl" id="tl"></div></div></section>
+<section class="dark-s hide" id="gallery"><div class="wrap"><h2>Moments Together</h2><div class="grid" id="grid"></div></div></section>
+
+<section class="dark-s" id="share">
+  <div class="wrap rev">
+    <h2>Share the Invitation</h2>
+    <svg class="divider" viewBox="0 0 260 24" aria-hidden="true"><use href="#div"/></svg>
+    <div class="acts">
+      <button class="btn" id="shareBtn" type="button">Share Wedding Invitation</button>
+      <a class="btn ghost" id="waBtn" target="_blank" rel="noopener">WhatsApp</a>
+      <button class="btn ghost" id="linkBtn" type="button">Copy Link</button>
+    </div>
+    <p class="note" role="status" id="shareMsg"></p>
+  </div>
+</section>
+
+<section class="dark-s hide" id="rsvp">
+  <div class="wrap">
+    <h2>RSVP</h2>
+    <form id="rsvpForm" novalidate>
+      <div><label for="gn">Your name</label><input id="gn" name="name" autocomplete="name" required></div>
+      <fieldset><legend class="sr">Will you attend?</legend>
+        <label><input type="radio" name="attending" value="Joyfully Accept"> Joyfully Accept</label>
+        <label><input type="radio" name="attending" value="Regretfully Decline"> Regretfully Decline</label>
+      </fieldset>
+      <div><label for="gc">Number of guests</label><input id="gc" name="guests" type="number" min="1" max="10" value="1" inputmode="numeric"></div>
+      <div><label for="gm">Message (optional)</label><textarea id="gm" name="message" rows="3"></textarea></div>
+      <button class="btn" type="submit">Send RSVP</button>
+      <p id="fmsg" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer><p class="script">Rohan &amp; Sakshi</p><p>A beautiful beginning. A love that lasts forever.</p></footer>
+<div id="lb" role="dialog" aria-label="Photo viewer"><button class="btn" type="button" id="lbX">Close</button><img alt=""></div>
+<audio id="aud" loop preload="none"></audio>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
